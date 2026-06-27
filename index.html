@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scissors Express - Bihar's premium barbershop for authentic grooming, haircuts, and traditional shaves.">
+    <title>Scissors Express | Premium Barbershop in Bihar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="logo_v2.png" alt="Scissors Express Logo" style="height: 50px; width: auto; object-fit: contain;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary">Book Now</a>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Using one of the store images for the background -->
+        <div class="hero-bg" style="background-image: url('store-images/20260621_195238.jpg.jpeg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">Scissors Express</h1>
+            <p class="hero-subtitle fade-in-up delay-1">Premium grooming, crafted for Bihar.</p>
+            <p class="hero-hindi fade-in-up delay-2">आपका अपना Neighbourhood Barber</p>
+            <div class="hero-actions fade-in-up delay-3">
+                <a href="#services" class="btn-primary">View Services</a>
+                <a href="#contact" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-image reveal">
+                <img src="store-images/20260621_195346.jpg.jpeg" alt="Scissors Express Barbershop Interior">
+                <div class="experience-badge">
+                    <span class="number">10+</span>
+                    <span class="text">Years in<br>Bihar</span>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h2 class="section-title">Rooted in Tradition, <br><span class="highlight">Elevated in Style</span></h2>
+                <p>Welcome to Scissors Express. We are more than just a barbershop; we are a community hub where tradition meets modern grooming. Located right here in Bihar, we take immense pride in our craft.</p>
+                <p>Whether you need a classic haircut, a sharp beard trim, or a relaxing Champi (head massage), our skilled barbers treat every client like family. Hygiene, precision, and a warm welcoming vibe—that's our promise to you.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4 class="stat-num">5000+</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="stat-num">100%</h4>
+                        <p>Hygienic</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="stat-num">Top</h4>
+                        <p>Rated Local</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p>Professional grooming tailored for the modern Indian man.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Haircut -->
+                <div class="service-card reveal">
+                    <div class="video-container">
+                        <!-- Placeholder for user to drop video. For demo purposes, we will style it as a slick placeholder if video fails -->
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/haircut.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <div class="video-fallback">Video placeholder: haircut.mp4</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Classic Haircut</h3>
+                        <p>Precision cut customized to your style.</p>
+                        <span class="price">₹150</span>
+                    </div>
+                </div>
+                
+                <!-- Beard Trim -->
+                <div class="service-card reveal">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/beard.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-fallback">Video placeholder: beard.mp4</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Beard Trim & Shape</h3>
+                        <p>Sharp, clean lines for the perfect look.</p>
+                        <span class="price">₹100</span>
+                    </div>
+                </div>
+                
+                <!-- Head Massage (Champi) -->
+                <div class="service-card reveal">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/champi.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-fallback">Video placeholder: champi.mp4</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Relaxing Champi</h3>
+                        <p>Traditional oil head massage to melt stress away.</p>
+                        <span class="price">₹120</span>
+                    </div>
+                </div>
+                
+                <!-- Traditional Shave -->
+                <div class="service-card reveal">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/shave.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-fallback">Video placeholder: shave.mp4</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Traditional Shave</h3>
+                        <p>Hot towel, straight razor foam shave.</p>
+                        <span class="price">₹80</span>
+                    </div>
+                </div>
+                
+                <!-- Hair Color -->
+                <div class="service-card reveal">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/color.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-fallback">Video placeholder: color.mp4</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Hair Color / Dye</h3>
+                        <p>Natural looking color and grey coverage.</p>
+                        <span class="price">₹250</span>
+                    </div>
+                </div>
+                
+                <!-- Kids Haircut -->
+                <div class="service-card reveal">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/kids.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-fallback">Video placeholder: kids.mp4</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Kids Haircut</h3>
+                        <p>Gentle and stylish cuts for the little ones.</p>
+                        <span class="price">₹100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="9.8" y1="8.2" x2="21" y2="15"></line><line x1="9.8" y1="15.8" x2="21" y2="9"></line></svg>
+                    </div>
+                    <h4>Skilled Barbers</h4>
+                    <p>Experts in both modern styles and traditional cuts.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 11l2 2 4-4"></path></svg>
+                    </div>
+                    <h4>Hygienic Tools</h4>
+                    <p>100% sanitized equipment for your safety.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12M6 8h12M6 13h8.5a4.5 4.5 0 0 0 0-9H6M9 13v8M18 21L9 13"></path></svg>
+                    </div>
+                    <h4>Affordable Prices</h4>
+                    <p>Premium experience that doesn't break the bank.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h4>Walk-ins Welcome</h4>
+                    <p>No appointment? No problem. Drop in anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Inside Scissors Express</h2>
+                <p>Take a look at our shop, our tools, and our craft.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <img src="store-images/20260621_195105.jpg.jpeg" alt="Scissors Express Gallery" class="reveal">
+                <img src="store-images/20260621_195112.jpg.jpeg" alt="Scissors Express Gallery" class="reveal">
+                <img src="store-images/20260621_195137.jpg.jpeg" alt="Scissors Express Gallery" class="reveal">
+                <img src="store-images/20260621_195409.jpg.jpeg" alt="Scissors Express Gallery" class="reveal">
+                <img src="store-images/20260621_195411.jpg.jpeg" alt="Scissors Express Gallery" class="reveal">
+                <img src="store-images/20260622_090704.jpg.jpeg" alt="Scissors Express Gallery" class="reveal">
+                <img src="store-images/20260622_090708.jpg.jpeg" alt="Scissors Express Gallery" class="reveal">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review">"Bhaiya ka hath set hai. Ekdam badhiya haircut kiya, aur champi toh majedar thi! Bihar ka best salon."</p>
+                    <h4 class="name">Ravi Kumar</h4>
+                    <span class="location">Patna</span>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review">"Bahut saaf suthra aur premium feel hai. Price bhi bohot affordable hai. Scissors Express is my go-to place now."</p>
+                    <h4 class="name">Sanjay Yadav</h4>
+                    <span class="location">Muzaffarpur</span>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review">"Best beard trim I ever got. Staff is very polite and respectful. Apne mohalle ki feeling aati hai idhar."</p>
+                    <h4 class="name">Amit Singh</h4>
+                    <span class="location">Darbhanga</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info reveal">
+                <h2 class="section-title">Visit Us</h2>
+                <p>Walk-ins are always welcome. Drop by for a fresh look!</p>
+                
+                <div class="info-block">
+                    <h4>📍 Location</h4>
+                    <p>Main Market Road,<br>Bihar, India 800001</p>
+                </div>
+                
+                <div class="info-block">
+                    <h4>🕒 Working Hours</h4>
+                    <p>Monday - Sunday: 8:00 AM - 9:00 PM</p>
+                </div>
+                
+                <div class="info-block">
+                    <h4>📞 Contact</h4>
+                    <p>+91 62996 05429</p>
+                </div>
+                
+                <a href="https://wa.me/916299605429" class="btn-whatsapp" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 3.825 0 6.938 3.112 6.938 6.937 0 3.825-3.113 6.938-6.938 6.938z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+            <div class="contact-map reveal">
+                <!-- Stable query-based Google Maps embed URL -->
+                <iframe src="https://maps.google.com/maps?q=Bihar,%20India&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Scissors Express</h3>
+                <p>Bihar's trusted grooming destination. Your style, our craft.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with ❤️ in Bihar. © 2026 Scissors Express. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

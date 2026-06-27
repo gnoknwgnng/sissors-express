@@ -51,13 +51,53 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(el);
     });
 
-    // Handle missing videos gracefully for demo purposes
-    // Note: The user is instructed to place MP4 files in assets/videos/
+    // Lazy Load & Play Videos on Viewport Intersection
+    const lazyVideos = document.querySelectorAll('.lazy-video');
+    
+    if ('IntersectionObserver' in window) {
+        const lazyVideoObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    const source = video.querySelector('source');
+                    if (source && source.dataset.src) {
+                        source.src = source.dataset.src;
+                        video.load();
+                        video.play().catch(err => console.log("Video play prevented: ", err));
+                    }
+                    // Keep observing but we could unobserve if we don't want to pause it
+                    // Actually, let's pause it when it goes out of view to save CPU!
+                } else {
+                    // Pause if it goes out of view
+                    if (video.currentTime > 0 && !video.paused && !video.ended) {
+                        video.pause();
+                    }
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px 200px 0px" // Preload 200px before entering viewport
+        });
+
+        lazyVideos.forEach(video => {
+            lazyVideoObserver.observe(video);
+        });
+    } else {
+        // Fallback for browsers without IntersectionObserver
+        lazyVideos.forEach(video => {
+            const source = video.querySelector('source');
+            if (source && source.dataset.src) {
+                source.src = source.dataset.src;
+                video.load();
+                video.play().catch(err => console.log(err));
+            }
+        });
+    }
+
+    // Handle missing videos gracefully
     const videos = document.querySelectorAll('video');
     videos.forEach(video => {
         video.addEventListener('error', function(e) {
-            // If video fails to load, the .video-fallback text will show (defined in CSS/HTML)
-            // We can also add a class to the container to show a generic background if needed
             this.parentElement.style.backgroundColor = '#111';
         });
     });
